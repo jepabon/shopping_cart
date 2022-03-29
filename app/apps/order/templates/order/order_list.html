@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load base_filters %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12 text-right mb-2">
+            <a href="{% url 'order:create' %}"><i class="fa fa-plus"></i> Crear pedido</a>
+        </div>
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Consecutivo
+                        </th>
+                        <th>
+                            Creado Por
+                        </th>
+                        <th>
+                            Estado
+                        </th>
+                        <th>
+                            Total
+                        </th>
+                        <th class="text-center">
+                            Acciones
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for object in object_list %}
+                        <tr>
+                            <td>
+                                Pedido #{{ object.id }}
+                            </td>
+                            <td>
+                                {{ object.created_by }}
+                            </td>
+                            <td>
+                                {{ object.get_status_display }}
+                            </td>
+                            <td>
+                                {{ object.total|default:0|currency:'$' }}
+                            </td>
+                            <td class="text-center">
+                                <a href="{% url 'order:update' object.id %}"><i class="fa fa-edit"></i></a>
+                                <a href="{% url 'order:delete' object.id %}"><i class="fa fa-trash"></i></a>
+                                {% if object.status == 'paid' %}
+                                    <a href="{% url 'shipment:create' %}">Procesar Envío</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

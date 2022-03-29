@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 text-center">
+        <form action="{% url 'shipment:delete' object.id %}" method="post">
+            {% csrf_token %}
+            <p>¿Está seguro que desea borrar "{{ object }}"?</p>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-danger">
+                    Borrar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

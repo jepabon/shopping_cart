@@ -1,0 +1,3 @@
+Waiting for postgres...
+PostgreSQL started
+pg_dump: error: connection to database "shopping_cart_dev" failed: invalid integer value "shopping_cart" for connection option "port"

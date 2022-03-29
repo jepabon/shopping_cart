@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12 mt-5">
+            <div class="row">
+                <div class="col-4">
+                    <a href="{% url 'product:list' %}"><img class="settings_image" src="/media/product.png" alt=""></a>
+                </div>
+                <div class="col-4">
+                    <a href="{% url 'order:list' %}"><img class="settings_image" src="/media/order.png" alt=""></a>
+                </div>
+                <div class="col-4">
+                    <a href="{% url 'shipment:list' %}"><img class="settings_image" src="/media/shipment.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

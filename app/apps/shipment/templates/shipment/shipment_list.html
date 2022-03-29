@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load base_filters %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12 text-right mb-2">
+            <a href="{% url 'shipment:create' %}"><i class="fa fa-plus"></i> Crear Envío</a>
+        </div>
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Pedido
+                        </th>
+                        <th>
+                            Estado
+                        </th>
+                        <th>
+                            Dirección
+                        </th>
+                        <th class="text-center">
+                            Acciones
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for object in object_list %}
+                        <tr>
+                            <td>
+                                {{ object.order }}
+                            </td>
+                            <td>
+                                {{ object.get_status_display }}
+                            </td>
+                            <td>
+                                {{ object.address }}
+                            </td>
+                            <td class="text-center">
+                                <a href="{% url 'shipment:update' object.id %}"><i class="fa fa-edit"></i></a>
+                                <a href="{% url 'shipment:delete' object.id %}"><i class="fa fa-trash"></i></a>
+                                {% if object.status == 'new' %}
+                                    <a href="{% url 'shipment:sent' object.id %}">Enviar pedido</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

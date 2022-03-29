@@ -72,6 +72,54 @@
     }
 },
 {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "shipment",
+        "model": "shipment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "payment",
+        "model": "payment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "payment",
+        "model": "paymentorder"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3st4txkgqe7civfer82acw2ol45hv80r",
+    "fields": {
+        "session_data": "YWIxNDRkNjIxZmI4NWY3OTI5ODg1ZjgxZjM5YTdiOGI0OWM2Mjg4Nzp7Il9hdXRoX3VzZXJfaWQiOiIzIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyMDhmYzZiNDE3NTIxZjM2YjYzOWJiMjk2NzA2MTVjZDg2ZTgwNzljIn0=",
+        "expire_date": "2022-04-12T20:06:35.226Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kvaj9lxhg7nbn60ztblauxddo3946nqh",
+    "fields": {
+        "session_data": "Y2RkMjUwNGZhMDJhNjc4ZWZlYzM2ZGMzOTI2OWQyNDQ1NDVhNGQyMTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI1OWRkMzQwYTU5ZGRiYzM4NjBmMzM2NGQxZWZlZDc5Y2U2NzNiZGQ1In0=",
+        "expire_date": "2022-04-10T02:33:32.524Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tom3bsbevh9q6y0kg87v7menyomz9vyf",
+    "fields": {
+        "session_data": "ZmM5MjIxODRlOGM1ZjFiN2RmODFmYjkzMzRmY2ZjNDRjMDg3YjIyMTp7fQ==",
+        "expire_date": "2022-04-12T07:35:13.055Z"
+    }
+},
+{
     "model": "sessions.session",
     "pk": "uf1l839kdr4xyl0a4in4hpvvs1kxd8hr",
     "fields": {
@@ -80,12 +128,20 @@
     }
 },
 {
+    "model": "sessions.session",
+    "pk": "v4gxrcnsstxa23nfszdkmk6hibpazh4u",
+    "fields": {
+        "session_data": "MjgzZjI1ZGJkZjM0NDRmY2M0M2JmYjVkNzcxYzI1ZmQzN2ZlMmQzNzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJkMjU5ZmNiM2VhM2Q5NGQ4NDA1NjgxYjE2ODZjMGU2NDBlODZiMzNkIn0=",
+        "expire_date": "2022-04-12T19:06:55.059Z"
+    }
+},
+{
     "model": "product.product",
     "pk": 1,
     "fields": {
         "name": "Headphone",
         "price": 435.0,
-        "image": "headphone_XwADsl7.jpeg"
+        "image": "headphone_XwADsl7_VHGyLCr.jpeg"
     }
 },
 {
@@ -95,15 +151,6 @@
         "name": "Watch",
         "price": 110.0,
         "image": "watch_fXEq6mh.jpeg"
-    }
-},
-{
-    "model": "product.product",
-    "pk": 3,
-    "fields": {
-        "name": "Monitor",
-        "price": 1500.0,
-        "image": "monitor_0qNmLN6.jpg"
     }
 },
 {
@@ -143,21 +190,91 @@
     }
 },
 {
-    "model": "item.item",
+    "model": "product.product",
     "pk": 8,
     "fields": {
+        "name": "Monitor",
+        "price": 1500.0,
+        "image": "monitor_0qNmLN6_qbjwFQP.jpg"
+    }
+},
+{
+    "model": "item.item",
+    "pk": 12,
+    "fields": {
         "amount": 1,
-        "order": 1,
+        "order": 2,
+        "product": 1
+    }
+},
+{
+    "model": "item.item",
+    "pk": 13,
+    "fields": {
+        "amount": 1,
+        "order": 2,
+        "product": 2
+    }
+},
+{
+    "model": "item.item",
+    "pk": 14,
+    "fields": {
+        "amount": 1,
+        "order": 3,
+        "product": 2
+    }
+},
+{
+    "model": "item.item",
+    "pk": 16,
+    "fields": {
+        "amount": 1,
+        "order": 8,
+        "product": 2
+    }
+},
+{
+    "model": "item.item",
+    "pk": 17,
+    "fields": {
+        "amount": 1,
+        "order": 8,
         "product": 4
     }
 },
 {
     "model": "item.item",
-    "pk": 10,
+    "pk": 18,
     "fields": {
         "amount": 1,
+        "order": 9,
+        "product": 6
+    }
+},
+{
+    "model": "shipment.shipment",
+    "pk": 6,
+    "fields": {
         "order": 1,
-        "product": 3
+        "address": "asdf",
+        "status": "sent"
+    }
+},
+{
+    "model": "payment.paymentorder",
+    "pk": 1,
+    "fields": {
+        "payment": 1,
+        "order": 2
+    }
+},
+{
+    "model": "payment.paymentorder",
+    "pk": 2,
+    "fields": {
+        "payment": 1,
+        "order": 3
     }
 },
 {
@@ -485,19 +602,127 @@
     }
 },
 {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add shipment",
+        "content_type": 10,
+        "codename": "add_shipment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change shipment",
+        "content_type": 10,
+        "codename": "change_shipment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete shipment",
+        "content_type": 10,
+        "codename": "delete_shipment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view shipment",
+        "content_type": 10,
+        "codename": "view_shipment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add payment",
+        "content_type": 11,
+        "codename": "add_payment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change payment",
+        "content_type": 11,
+        "codename": "change_payment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete payment",
+        "content_type": 11,
+        "codename": "delete_payment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view payment",
+        "content_type": 11,
+        "codename": "view_payment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add payment order",
+        "content_type": 12,
+        "codename": "add_paymentorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change payment order",
+        "content_type": 12,
+        "codename": "change_paymentorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete payment order",
+        "content_type": 12,
+        "codename": "delete_paymentorder"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view payment order",
+        "content_type": 12,
+        "codename": "view_paymentorder"
+    }
+},
+{
     "model": "auth.user",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$180000$vaDltmra6JEa$soKSIFa5LXb1eJDAoHd0aJ78TtRrSYN5c5cXB80A6PU=",
-        "last_login": "2022-03-28T09:50:09.661Z",
+        "password": "pbkdf2_sha256$180000$t7kyjfAvKXcb$4a2Ep9u6BnKc+JoLSM35N6scieBVF/k0YzB5lmxig44=",
+        "last_login": "2022-03-29T20:05:34.584Z",
         "is_superuser": false,
-        "username": "jepabon",
+        "username": "prueba_cliente",
         "first_name": "",
         "last_name": "",
-        "email": "",
+        "email": "prueba_cliente@spam4.me",
         "is_staff": false,
         "is_active": true,
-        "date_joined": "2022-03-28T09:50:02.926Z",
+        "date_joined": "2022-03-28T09:50:02Z",
         "groups": [],
         "user_permissions": []
     }
@@ -506,16 +731,34 @@
     "model": "auth.user",
     "pk": 2,
     "fields": {
-        "password": "pbkdf2_sha256$180000$RlwxsGNoAzV2$M44c5RVS8wRPquNScvS4w3862OUh2l3/X49y63Bz8bY=",
-        "last_login": "2022-03-28T09:51:19.234Z",
+        "password": "pbkdf2_sha256$180000$t7kyjfAvKXcb$4a2Ep9u6BnKc+JoLSM35N6scieBVF/k0YzB5lmxig44=",
+        "last_login": "2022-03-29T20:04:25.617Z",
         "is_superuser": true,
-        "username": "jepabon922",
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@spam4.me",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-03-28T09:51:12Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$5H0idyAY6XTi$zFjUS1poHJQeXKr3a7tvsBjatKuzYysJvF3FjVGKisU=",
+        "last_login": "2022-03-29T20:06:35.209Z",
+        "is_superuser": false,
+        "username": "user_staff",
         "first_name": "",
         "last_name": "",
         "email": "",
         "is_staff": true,
         "is_active": true,
-        "date_joined": "2022-03-28T09:51:12.054Z",
+        "date_joined": "2022-03-29T19:59:57Z",
         "groups": [],
         "user_permissions": []
     }
@@ -524,10 +767,70 @@
     "model": "order.order",
     "pk": 1,
     "fields": {
-        "total": 1699.0,
+        "total": null,
         "status": "new",
         "creation_date": "2022-03-28T09:54:15.777Z",
         "created_by": 2
+    }
+},
+{
+    "model": "order.order",
+    "pk": 2,
+    "fields": {
+        "total": 545.0,
+        "status": "paid",
+        "creation_date": "2022-03-29T03:38:42.992Z",
+        "created_by": 1
+    }
+},
+{
+    "model": "order.order",
+    "pk": 3,
+    "fields": {
+        "total": 110.0,
+        "status": "paid",
+        "creation_date": "2022-03-29T12:30:36.233Z",
+        "created_by": 1
+    }
+},
+{
+    "model": "order.order",
+    "pk": 8,
+    "fields": {
+        "total": 309.0,
+        "status": "confirmed",
+        "creation_date": "2022-03-29T18:57:48.260Z",
+        "created_by": 1
+    }
+},
+{
+    "model": "order.order",
+    "pk": 9,
+    "fields": {
+        "total": 350.0,
+        "status": "confirmed",
+        "creation_date": "2022-03-29T20:05:47.772Z",
+        "created_by": 1
+    }
+},
+{
+    "model": "order.order",
+    "pk": 10,
+    "fields": {
+        "total": 0.0,
+        "status": "new",
+        "creation_date": "2022-03-29T20:06:11.486Z",
+        "created_by": 1
+    }
+},
+{
+    "model": "payment.payment",
+    "pk": 1,
+    "fields": {
+        "method_payment": "check",
+        "value": null,
+        "creation_date": "2022-03-29T17:18:37.747Z",
+        "created_by": 1
     }
 },
 {
@@ -697,6 +1000,84 @@
         "object_repr": "USB Hub",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2022-03-29T19:48:09.935Z",
+        "user": 2,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "jepabon",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2022-03-29T19:57:36.627Z",
+        "user": 2,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "prueba_cliente",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2022-03-29T19:57:53.889Z",
+        "user": 2,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "prueba_cliente",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2022-03-29T19:58:15.816Z",
+        "user": 2,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2022-03-29T19:58:19.517Z",
+        "user": 2,
+        "content_type": 4,
+        "object_id": "2",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2022-03-29T20:05:14.370Z",
+        "user": 2,
+        "content_type": 4,
+        "object_id": "3",
+        "object_repr": "user_staff",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Staff status\"]}}]"
     }
 }
 ]
